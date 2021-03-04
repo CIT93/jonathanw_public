@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Learn Together</title>
+    <script defer src="app.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Built-IT</h1>
+        <h2>Choose your theme</h2>
+        <select id="theme">
+            <option value="">Plain</option>
+            <option value="rainbow">Rainbow</option>
+            <option value="console">Console</option>
+        </select>
+        <h2>How many HTML elements do you want me to build?</h2>
+        <form id="build-elements">
+            <label>
+                Number <input type="text" name="elNum" required size="5">
+            </label>
+            <label>
+                Element <input type="text" name="elType" required size="5">
+            </label>
+            <button id="build" name="build">Built-IT</button>
+            <button id="clear" name="clear">Clear-IT</button>
+        </form>
+    </div>
+    <div id="output"></div>
+</body>
+</html>
