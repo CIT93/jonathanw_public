@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stimulus App</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    <script defer src="app-functions.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Stimulus Calculator</h1>
+    <h3>Complete the form below to calculate your stimulus check.</h3>
+    <div id="error"></div>
+    <div id="main">
+        <form id="calc-stimulus">
+            <label>
+                Tax Filing Status
+                <select id="stim-status" name="stimStatus">
+                    <option value="">Select Status...</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="hoh">Head of House</option>
+                </select>
+            </label>
+            <label>
+                How many dependants?
+                <input type="number" id="stim-depend" name="stimDepend" placeholder="0" size="2" min="0" max="5">
+            </label>
+            <label>
+                Income (AGI) $
+                <input type="text" id="stim-income" name="stimIncome" placeholder="75,000" size="6">
+            </label>
+            <button>Calculate</button>
+        </form>
+    </div>
+    <div id="output"></div>
+    <h2>Previously Calculated Checks</h2>
+    <div id="checks"></div>
+</body>
+</html>
